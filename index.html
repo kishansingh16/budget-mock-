@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>My Budget App</title>
+  </head>
+  <body>
+        <h2 class="title">
+          My Budget</a>
+        </h2>
+        <div>
+      <form id="form">      
+          <label for="text">cateogery</label>
+          <input type="text" id="text"  placeholder="Enter text..."
+            onfocus="this.value='' " />
+        </div>
+        <div>
+          <label for="amount">Amount(use "-" sign for expense calculation") </label>
+          <input
+            type="number" id="amount" placeholder="Enter value..."
+            onfocus="this.value=''" />
+        </div>
+
+        <button class="btn">Add transaction</button>
+      </form>
+
+      <div class="income-expense">
+          <h4>Income</h4>
+          <p class="income" id="income">$0.00</p>
+        </div>
+          <h4>Expense</h4>
+          <p class="expense" id="expense">$0.00</p>
+        </div>
+          <h4>Balance</h4>
+          <p id="balance">$0.00</p>
+        </div>
+      </div>
+      <h3>all transaction</h3>
+      <ul id="list" class="list"></ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
